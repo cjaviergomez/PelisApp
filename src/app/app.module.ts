@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { GaleriaComponent } from './components/home/galeria.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     NavbarComponent,
     SearchComponent,
     PeliculaComponent,
-    PeliculaImagenPipe
+    PeliculaImagenPipe,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'search', component: SearchComponent },
+  { path: 'search/:texto', component: SearchComponent },
   { path: 'pelicula', component: PeliculaComponent },
   { path: '**', component: HomeComponent },
 ];
