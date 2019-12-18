@@ -52,4 +52,12 @@ export class PeliculasService {
             return data.results;
           }));
   }
+
+  getPelicula(id: string) {
+    const url = `${ this.urlMoviedb }/movie/${ id }?api_key=${ this.apikey }&language=es&angular.callbacks._0`;
+    return this.http.jsonp( url, 'callback' )
+            .pipe(map((data: any) => {
+              return data;
+            }));
+  }
 }

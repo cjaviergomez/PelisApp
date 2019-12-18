@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
               public route: ActivatedRoute) {
 
               this.route.params.subscribe(params => {
-                if (params['texto']){
+                if (params['texto']) {
                   this.buscar = params['texto'];
                   this.buscarPelicula();
 
